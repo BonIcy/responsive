@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url(menu.css);
-
+@import url(banner.css);
+@import url(blog.css);
 
  * {
     margin: 0;
@@ -36,4 +37,9 @@
 
  header .contenedor {
     display: table;
+ }
+
+ section {
+   width: 100%;
+   margin-bottom: 25px;
  }
