@@ -1,0 +1,36 @@
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.774);
+    transition: all 0.5s;
+    transform:  translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.37);
+}
+.menu a:hover {
+    background: rgba(0, 0, 0, 0.37);
+}
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
